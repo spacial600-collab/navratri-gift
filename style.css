@@ -1,178 +1,263 @@
 * {
   box-sizing: border-box;
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  min-height: 100%;
 }
 
 body {
-  font-family: Arial, "Noto Sans Devanagari", sans-serif;
-  background: linear-gradient(180deg, #3b0505, #8b160d, #2d0303);
-  color: #fff;
-  min-height: 100vh;
+  font-family:
+    Arial,
+    "Noto Sans Devanagari",
+    sans-serif;
+
+  background:
+    radial-gradient(circle at top, #8f1c12, #3b0505 55%, #170101);
+
+  color: white;
 }
 
 .page {
   width: 100%;
-  max-width: 600px;
+  max-width: 620px;
   margin: auto;
   padding-bottom: 40px;
 }
 
-/* Welcome Section */
+/* TOP */
 
-.welcome {
+.top-title {
   text-align: center;
-  padding: 25px 18px 18px;
-}
+  padding: 22px 10px 8px;
 
-.small-line {
-  font-size: 18px;
-  color: #ffd76a;
-  margin-bottom: 12px;
+  color: #ffd65c;
+
+  font-size: 20px;
   font-weight: bold;
 }
 
+/* HEADING */
+
 h1 {
-  font-size: 25px;
+  margin: 10px 16px 20px;
+
+  text-align: center;
+
+  font-size: 28px;
   line-height: 1.45;
   font-weight: 800;
-  text-shadow: 0 2px 8px rgba(0,0,0,.5);
+
+  color: white;
+
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 h1 span {
   display: block;
-  color: #ffe08a;
+
   margin-top: 5px;
+
+  color: #ffe08a;
 }
 
-/* GIF Card */
+/* GIF */
 
 .gift-card {
-  margin: 5px 14px 20px;
-  padding: 6px;
-  background: linear-gradient(135deg, #ffd86b, #fff1a8, #d89b20);
+  margin: 0 12px 22px;
+
+  padding: 5px;
+
   border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffd84d,
+      #fff1a8,
+      #d18a00,
+      #fff0a0
+    );
+
   box-shadow:
-    0 0 20px rgba(255, 210, 70, .45),
-    0 10px 30px rgba(0,0,0,.35);
+    0 0 25px rgba(255, 211, 70, 0.45),
+    0 10px 30px rgba(0, 0, 0, 0.45);
 }
 
-.gift-gif {
+.gift-card img {
   display: block;
+
   width: 100%;
   height: auto;
-  border-radius: 13px;
+
+  border-radius: 14px;
 }
 
-/* Share Box */
+/* SHARE CARD */
 
-.share-box {
-  margin: 20px 14px;
-  padding: 24px 18px;
-  background: rgba(255,255,255,.10);
-  border: 1px solid rgba(255,220,120,.35);
-  border-radius: 18px;
+.share-card {
+  margin: 20px 12px;
+
+  padding: 23px 17px;
+
   text-align: center;
-  backdrop-filter: blur(8px);
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.10);
+
+  border:
+    1px solid rgba(255, 220, 120, 0.35);
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
-.share-box h2 {
+.share-card h2 {
+  margin: 0 0 10px;
+
+  color: #ffe49a;
+
   font-size: 21px;
-  color: #ffe39a;
-  margin-bottom: 10px;
 }
 
-.share-box p {
+.share-card p {
+  margin: 0 0 17px;
+
+  color: #fff3d2;
+
   font-size: 15px;
   line-height: 1.6;
-  color: #fff3d0;
-  margin-bottom: 17px;
 }
+
+/* INPUT */
 
 #senderName {
   width: 100%;
+
   padding: 15px;
-  border: 2px solid #e8b83d;
+
+  border: 2px solid #e7b832;
+
   border-radius: 12px;
-  background: #fff;
-  color: #333;
+
+  background: white;
+
+  color: #222;
+
   font-size: 17px;
-  outline: none;
+
   text-align: center;
+
+  outline: none;
 }
 
 #senderName:focus {
-  border-color: #fff0a3;
-  box-shadow: 0 0 12px rgba(255,220,100,.45);
+  border-color: #fff0a0;
+
+  box-shadow:
+    0 0 12px rgba(255, 220, 100, 0.5);
 }
+
+/* BUTTON */
 
 #shareButton {
   width: 100%;
+
   margin-top: 14px;
+
   padding: 15px;
-  border: none;
+
+  border: 0;
+
   border-radius: 12px;
-  background: linear-gradient(135deg, #ffcf40, #e89500);
-  color: #4a1700;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffd84a,
+      #e99100
+    );
+
+  color: #4b1700;
+
   font-size: 18px;
+
   font-weight: 800;
+
+  box-shadow:
+    0 6px 16px rgba(0, 0, 0, 0.35);
+
   cursor: pointer;
-  box-shadow: 0 6px 15px rgba(0,0,0,.3);
 }
 
 #shareButton:active {
-  transform: scale(.97);
+  transform: scale(0.97);
 }
 
-.message {
+/* STATUS */
+
+#status {
   margin-top: 12px;
+
+  min-height: 20px;
+
+  color: #ffe7a0;
+
   font-size: 14px;
-  color: #ffe9a6;
 }
 
-/* Advertisement */
+/* AD SPACE */
 
 .ad-space {
-  margin: 25px 14px;
   min-height: 250px;
+
+  margin: 25px 12px;
+
+  border:
+    1px dashed rgba(255, 220, 120, 0.35);
+
   border-radius: 12px;
-  background: rgba(255,255,255,.07);
-  border: 1px dashed rgba(255,220,130,.35);
+
   display: flex;
+
   flex-direction: column;
-  align-items: center;
+
   justify-content: center;
-  color: rgba(255,255,255,.6);
+
+  align-items: center;
+
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.ad-label {
-  font-size: 11px;
+.ad-space small {
   margin-bottom: 8px;
-  text-transform: uppercase;
+
+  font-size: 10px;
+
   letter-spacing: 1px;
 }
 
-.ad-placeholder {
-  font-size: 13px;
-}
-
-/* Mobile */
+/* MOBILE */
 
 @media (max-width: 480px) {
 
-  .welcome {
-    padding-top: 20px;
-  }
-
   h1 {
-    font-size: 22px;
+    font-size: 23px;
   }
 
-  .small-line {
-    font-size: 16px;
+  .top-title {
+    font-size: 18px;
   }
 
-  .share-box h2 {
+  .share-card h2 {
     font-size: 19px;
   }
 }
