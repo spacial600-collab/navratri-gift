@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>नवरात्रि शुभकामनाएं</title>
 
   <link rel="stylesheet" href="style.css">
@@ -10,29 +11,25 @@
 
 <body>
 
-  <main class="page">
+  <div class="page">
 
-    <!-- शुभकामना -->
-    <section class="welcome">
-      <div class="small-line">🌺 शुभ नवरात्रि 🌺</div>
+    <div class="top-title">
+      🌺 शुभ नवरात्रि 🌺
+    </div>
 
-      <h1>
-        आप को और आपके परिवार वालों को
-        <span>Advance में नवरात्रि की हार्दिक शुभकामनाएं</span>
-      </h1>
-    </section>
+    <h1>
+      आप को और आपके परिवार वालों को
+      <span>Advance में नवरात्रि की हार्दिक शुभकामनाएं</span>
+    </h1>
 
-    <!-- GIF -->
-    <section class="gift-card">
+    <div class="gift-card">
       <img
-        src="navratri_gift_animated.gif"
+        src="navratri_gift_animated-1.gif"
         alt="नवरात्रि शुभकामना"
-        class="gift-gif"
       >
-    </section>
+    </div>
 
-    <!-- नाम -->
-    <section class="share-box">
+    <div class="share-card">
 
       <h2>🎁 अपना नाम इस बॉक्स में लिखें</h2>
 
@@ -42,30 +39,26 @@
       </p>
 
       <input
-        type="text"
         id="senderName"
+        type="text"
         placeholder="अपना नाम लिखें"
         maxlength="40"
-        autocomplete="name"
       >
 
       <button id="shareButton">
         💝 आगे भेजें
       </button>
 
-      <div id="message" class="message"></div>
+      <div id="status"></div>
 
-    </section>
+    </div>
 
-    <!-- Native Ad के लिए जगह -->
-    <section class="ad-space">
-      <div class="ad-label">Advertisement</div>
-      <div class="ad-placeholder">
-        यहाँ आपका Native Ad दिखाई देगा
-      </div>
-    </section>
+    <div class="ad-space">
+      <small>ADVERTISEMENT</small>
+      <div>आपका Native Ad यहाँ दिखाई देगा</div>
+    </div>
 
-  </main>
+  </div>
 
   <script src="script.js"></script>
 
